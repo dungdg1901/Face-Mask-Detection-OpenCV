@@ -4,7 +4,7 @@ import tensorflow as tf
 import cv2
 import numpy as np
 
-model = load_model('model.h5')
+model = load_model('model\model.h5')
 
 face_clf = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
@@ -36,9 +36,6 @@ while True:
 
     cv2.imshow('LIVE', img)
     key = cv2.waitKey(1)
-
-    if(key == 27):
-        break
 
 
 cv2.destroyAllWindows()
