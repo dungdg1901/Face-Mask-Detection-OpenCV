@@ -1,0 +1,3 @@
+tensorflow == 2.6.0-rc0
+numpy
+opencv-python
